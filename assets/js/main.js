@@ -11,6 +11,7 @@ const listArray = []
 let listaSpesa = document.getElementById("list");
 const listUl = document.createElement("Ul");
 listaSpesa.insertAdjacentElement("afterend", listUl);
+
 let i = 0;
 
 while (i == listArray.length){
