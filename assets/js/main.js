@@ -15,11 +15,11 @@ listaSpesa.insertAdjacentElement("afterend", listUl);
 let i = 0;
 
 while (i == listArray.length){
-    let item = prompt("vuoi aggiungere un prodotto alla lista?");
+    let item = prompt("quale prodotto vuoi aggiungere alla lista?");
     listArray.push(item);
     const listIl = document.createElement("li");
     listUl.insertAdjacentElement("afterend", listIl);
     listIl.innerHTML = item;
-    i = confirm("qualcos'altro?");
+    i = confirm("clicca ok per aggiungere un altro prodotto, clicca Annulla per confermare la lista");
     console.log(item);
 }
