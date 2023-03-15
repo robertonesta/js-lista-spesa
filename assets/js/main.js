@@ -8,16 +8,17 @@ Ricordiamoci di incrementare il contatore, o comunque di inserire una condizione
 
 const listArray = []
 
-let listaspesa = document.getElementById("list")
+let listaSpesa = document.getElementById("list");
+const listUl = document.createElement("Ul");
+listaSpesa.insertAdjacentElement("afterend", listUl);
+let i = 0;
 
-
-let i = true;
-
-while (i = true){
-    let item = prompt("vuoi aggiungere un prodotto alla lista?")
-    listArray.push(item)
-    
-
-    i=confirm("qualcos'altro?")
-    console.log(item)
+while (i == listArray.length){
+    let item = prompt("vuoi aggiungere un prodotto alla lista?");
+    listArray.push(item);
+    const listIl = document.createElement("li");
+    listUl.insertAdjacentElement("afterend", listIl);
+    listIl.innerHTML = item;
+    i = confirm("qualcos'altro?");
+    console.log(item);
 }
